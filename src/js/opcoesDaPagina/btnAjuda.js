@@ -4,14 +4,14 @@
 
     btnAjuda.addEventListener('click', function() {
         const listaDeMsgs = [
-            'Bien venido \o/',
-            'Você pode criar cartões',
-            'Brinque de restart',
-            'Deseja bloquart os popups?'
+            { conteudo: 'Bien venido \o/', cor: 'red' },
+            { conteudo: 'Você pode criar cartões', cor: 'purple' },
+            { conteudo: 'Brinque de restart', cor: 'orange' },
+            { conteudo: 'Deseja bloquart os popups?', cor: 'cyan' },
         ]
 
-        listaDeMsgs.forEach(function(mensagem) {
-            alert(mensagem)
+        listaDeMsgs.forEach(function(mensagemObjeto) {
+            adicionaCartao(mensagemObjeto)
         })
 
         // function forEach(funcao) {
